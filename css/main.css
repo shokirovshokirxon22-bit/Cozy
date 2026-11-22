@@ -1,7 +1,71 @@
+/* roboto-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v51-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/roboto-v51-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/roboto-v51-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto-v51-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/roboto-v51-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/roboto-v51-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 a{
@@ -11,5 +75,226 @@ a{
 
 button{
     border: none;
+}
+
+.container{
+    width: 100%;
+    max-width: 90%;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.nav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #17183B;
+
+    h1{
+        font-size: 26px;
+        font-weight: 600;
+        color: #17183B;
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+
+        a{
+            font-size: 18px;
+            font-weight: 500;
+            color: #17183B;
+        }
+    }
+
+
+    .search{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 40px;
+
+        .fa-cart-shopping{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 70px;
+            border-left: 1px solid #17183B;
+        }
+    }
+}
+
+.container-section{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 60px;
+}
+
+.meryl{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 40%;
+
+    .chair{
+        text-transform: capitalize;
+        margin-top: 30px;
+        margin-bottom: 40px;
+
+        span{
+            font-size: 15px;
+            font-weight: 500;
+            color: #AEAEBB;
+        }
+        font-size: 16px;
+        font-weight: 500;
+        color: #17183B;
+    }
+
+    h1{
+        font-size: 30px;
+        font-weight: 700;
+        color: #17183B;
+        text-transform: capitalize;
+        margin-bottom: 25px;
+    }
+
+    h3{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 40px;
+
+        .money{
+            font-size: 25px;
+            font-weight: 400;
+            color: #17183B;
+        }
+
+        .baholash{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+
+
+            .stars{
+                display: flex;
+                flex-direction: row;
+
+
+                i{
+                    color: yellow;
+                }
+            }
+
+            .baholash-raqam{
+                font-size: 16px;
+                font-weight: 500;
+                color: #17183B;
+
+                span{
+                    color: #AEAEBB;
+                }
+            }   
+        }
+    }
+
+    .lorem{
+        color: #AEAEBB;
+        margin-bottom: 40px;
+    }
+
+    button{
+        padding: 8px 20px;
+        background-color: #3AA29F;
+        font-size: 10px;
+        font-weight: 500;
+        color: #fff;
+    }
+
+}
+
+
+
+.img{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+    .namber{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        p{
+            display: flex;
+            align-items: start;
+            font-size: 12px;
+            font-weight: 500;
+            color: #AEAEBB;
+            
+
+            span{
+                font-size: 20px;
+                font-weight: 600;
+                color: #17183B;
+                
+            }
+        }
+
+        .ong-chap{
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+
+            button{
+                background-color: transparent;
+            }
+        }
+    }
+
+
+    .asosiy-img{
+        height: 350px;        
+        margin-bottom: 50px;
+    }
+
+    .images{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        scrollbar-width: auto;
+        gap: 60px;
+        
+
+        button{
+            width: 100px;
+            height: 100px;
+            background-color: transparent;
+
+            img{
+                width: 100px;
+            }
+            
+        }
+    }
+}
+
+.tanlangan{
+    border: 1px solid #17183B;
 }
 
